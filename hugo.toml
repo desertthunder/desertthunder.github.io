@@ -25,6 +25,7 @@ DateForm = "Jan 2 2006"
 mainSections = ["post"]
 disableFonts = false
 External = [
+    { Title = "Garden", URL = "https://desertthunder.github.io/garden" },
     { Title = "Source Code", URL = "https://github.com/desertthunder/desertthunder.github.io" },
 ]
 description = "I'm software engineer from Austin, TX. Check out my writing and projects."

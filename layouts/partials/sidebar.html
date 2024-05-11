@@ -36,7 +36,7 @@
     {{ end -}}
 
     {{ range .Site.Params.External -}}
-    <a class="sidebar-nav-item external-link" href="{{ .URL }}">
+    <a class="sidebar-nav-item external-link" href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
       <span>
         {{ .Title }}
       </span>
