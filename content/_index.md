@@ -16,11 +16,4 @@ would like to [share](https://desertthunder.github.io/garden/) publicly. Additio
 I would like to dabble in teaching and have essays posted to help expose readers
 to complex topics.
 
-I'd like to add that there will be some posts and notes about mental health and personal
-development. The best engineers in my experience are the ones who live fulfilling
-lives. I've seen it. I was raised by one of those engineers.
-
-Learning is fun. Engineering is supposed to be fun. I hope my work here helps you
-enjoy what you're doing!
-
-Learn [more](/about) me.
+Learn more [about](/about) me.

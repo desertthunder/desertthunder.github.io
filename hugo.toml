@@ -17,20 +17,18 @@ typographer = true
 [markup.goldmark.renderer]
 unsafe = true
 
-[[menu.main]]
-identifier = "categories"
-name = "Categories Section from Menu"
-title = "Categories section"
-url = "/categories/"
-weight = -110
-
 [params]
 Title = "Desert Thunder"
 Tagline = "Owais J.'s Writing and Projects."
 Author = "Owais Jamil"
 DateForm = "Jan 2 2006"
-mainSections = [ "post" ]
+mainSections = ["post"]
 disableFonts = false
+External = [
+    { Title = "Source Code", URL = "https://github.com/desertthunder/desertthunder.github.io" },
+]
+description = "I'm software engineer from Austin, TX. Check out my writing and projects."
+
 
 # [params.Github]
 # Url = "http://github.com/desertthunder/desertthunder.github.io"

@@ -6,24 +6,42 @@
       {{- with .Site.Params.description }}
       {{ . | markdownify }}
       {{- else }}
-      A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
+      A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on
+      content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
       {{- end }}
     </p>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item {{ if .IsHome }} active {{ end }}" href="/">Home</a>
-    <a class="sidebar-nav-item {{ if eq .RelPermalink "/post/" }} active {{ end }}" href="/post">Posts</a>
+    <a class="sidebar-nav-item {{ if .IsHome }} active {{ end }}" href="/">
+      Home
+    </a>
+
+    <!-- <a class="sidebar-nav-item {{ if eq .RelPermalink " /post/" }} active {{ end }}" href="/post">Posts</a> -->
+
     {{- $currentPage := . }}
     {{- range .Site.Menus.main -}}
-    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .) }}
+      active{{end}}" href="{{ .URL }}" title="{{ .Title }}">
+      {{ .Name }}</a>
     {{- end -}}
 
     {{- $thisperma := .Permalink }}
     {{ range .Site.Pages.ByWeight -}}
-      {{ if isset .Params "sidebar" -}}
-        <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end -}}
+    {{ if isset .Params "sidebar" -}}
+    <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
+    {{ end -}}
+    {{ end -}}
+
+    {{ range .Site.Params.External -}}
+    <a class="sidebar-nav-item external-link" href="{{ .URL }}">
+      <span>
+        {{ .Title }}
+      </span>
+      <i class="bi bi-box-arrow-up-right"></i>
+    </a>
     {{ end -}}
 
     {{- with .Site.Params.Github }}
@@ -34,6 +52,7 @@
   </nav>
 
   <div class="sidebar-item">
-    <p>&copy; {{ .Site.Lastmod.Year }}. All rights reserved.</p>
+    <p> Built with <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a>.
+      Distributed under an MIT license.</p>
   </div>
 </div>

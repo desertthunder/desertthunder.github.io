@@ -2,6 +2,7 @@
 title: About
 sidebar: true
 weight: 1
+icon: bi-person-square
 ---
 
 ## Intro
