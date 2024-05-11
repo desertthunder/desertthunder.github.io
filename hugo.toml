@@ -1,0 +1,37 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+baseurl = "https://desertthunder.github.io/"
+canonifyurls = true
+pygmentsuseclasses = true
+
+
+[permalinks]
+post = ":year/:month/:day/:title/"
+fixed = ":title/"
+
+[markup.goldmark.extensions]
+typographer = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories Section from Menu"
+title = "Categories section"
+url = "/categories/"
+weight = -110
+
+[params]
+Title = "Desert Thunder"
+Tagline = "Owais J.'s Writing and Projects."
+Author = "Owais Jamil"
+DateForm = "Jan 2 2006"
+mainSections = [ "post" ]
+disableFonts = false
+
+# [params.Github]
+# Url = "http://github.com/desertthunder/desertthunder.github.io"
+# Head = "main"

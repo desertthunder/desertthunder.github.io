@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {{ partial "head.html" . }}
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    {{ partial "sidebar.html" . }}
+
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">{{ .Site.Params.Title }}</a>
+            <small>{{ .Site.Params.Tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">

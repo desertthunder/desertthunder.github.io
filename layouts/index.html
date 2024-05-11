@@ -1,0 +1,21 @@
+{{ partial "default_head.html" . }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
+<div class="page">
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <h2>
+        Most Recent Posts
+    </h2>
+    <ul id="list">
+        {{ range .Paginator.Pages }}
+        <li>{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }} -
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ partial "default_foot.html" . }}
