@@ -19,7 +19,7 @@ unsafe = true
 
 [params]
 Title = "Owais J."
-Tagline = "Writing and Projects Portfolio"
+Tagline = "Writing and Projects"
 Author = "Owais Jamil"
 DateForm = "Jan 2, 2006"
 mainSections = ["post"]

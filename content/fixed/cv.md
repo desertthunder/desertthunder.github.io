@@ -45,9 +45,10 @@ icon: bi-person-square
 
 ## EDUCATION
 
-### University of Texas at Austin
+### University of Texas
 
-*Austin, TX*
+Location: *Austin, TX*
+
 **Master of Science**, Major in Computer Science
 *2022 - Present*
 
