@@ -1,6 +1,5 @@
 ---
 title: Curriculum Vitae
-sidebar: false
 icon: bi-person-square
 ---
 

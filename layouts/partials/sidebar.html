@@ -1,3 +1,5 @@
+
+
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <div class="sidebar" id="sidebar">
@@ -19,7 +21,9 @@
 
     <a class="sidebar-nav-item {{ if eq .RelPermalink "/about/" }} active {{ end }}" href="/about">About</a>
 
-    <a class="sidebar-nav-item {{ if eq .RelPermalink "/post/" }} active {{ end }}" href="/post">Posts</a>
+    {{ if len (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+      <a class="sidebar-nav-item {{ if eq .RelPermalink "/post/" }} active {{ end }}" href="/post">Posts</a>
+    {{ end }}
 
     {{- $currentPage := . }}
     {{- range .Site.Menus.main -}}
