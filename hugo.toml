@@ -18,10 +18,10 @@ typographer = true
 unsafe = true
 
 [params]
-Title = "Desert Thunder"
-Tagline = "Owais J.'s Writing and Projects."
+Title = "Owais J."
+Tagline = "Writing and Projects Portfolio"
 Author = "Owais Jamil"
-DateForm = "Jan 2 2006"
+DateForm = "Jan 2, 2006"
 mainSections = ["post"]
 disableFonts = false
 External = [

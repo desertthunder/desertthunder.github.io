@@ -1,16 +1,14 @@
 ---
 title: About
-sidebar: true
-weight: 1
 icon: bi-person-square
 ---
 
 ## Intro
 
-Hey there! My moniker here is Desert Thunder, but usually I go by Owais.
-I'm a software engineer with roots in New England and Austin, TX.
-Right now I'm enrolled as a master's candidate at the University of Texas, and
-am working as a senior backend engineer at [Edlink](https://ed.link/).
+Hey there! My moniker here is Desert Thunder, but usually I go by Owais. I'm a software
+engineer with roots in New England and Austin, TX. Right now I'm enrolled as a master's
+candidate at the University of Texas, and most recently worked as a senior backend engineer
+at [Edlink](https://ed.link/).
 
 ### Mission
 
@@ -60,3 +58,8 @@ of Henry Rollins' Black Coffee Blues trilogy, as well as A Psalm for the Wild Bu
 - Every version of CS50
 - Kent C. Dodds
 - ThePrimeagen
+
+---
+
+*This page is a brief introduction to who I am and what I care about. For more details,*
+*projects, and some of my thoughts, check out my [blog](/) and [portfolio](/).*

@@ -3,7 +3,7 @@
 Hey there! My moniker here is Desert Thunder, but usually I go by Owais.
 I'm a software engineer with roots in New England and Austin, TX.
 Right now I'm enrolled as a master's candidate at the University of Texas, and
-am working as a senior backend engineer at [Edlink](https://ed.link/).
+was most recently working as a senior backend engineer at [Edlink](https://ed.link/).
 
 ## Mission
 
@@ -16,4 +16,6 @@ would like to [share](https://desertthunder.github.io/garden/) publicly. Additio
 I would like to dabble in teaching and have essays posted to help expose readers
 to complex topics.
 
-Learn more [about](/about) me.
+---
+
+Learn more [about](/about) me or view my [resume](/curriculum-vitae).
