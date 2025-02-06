@@ -1,3 +1,84 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+/* noto-sans-latin-wght-normal */
+@font-face {
+    font-family: 'Noto Sans Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('@fontsource-variable/noto-sans/files/noto-sans-latin-wght-normal.woff2') format('woff2-variations');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@theme {
+    --color-dawn-base00: #faf4ed;
+    --color-dawn-base01: #fffaf3;
+    --color-dawn-base02: #f2e9de;
+    --color-dawn-base03: #9893a5;
+    --color-dawn-base04: #797593;
+    --color-dawn-base05: #575279;
+    --color-dawn-base06: #575279;
+    --color-dawn-base07: #cecacd;
+    --color-dawn-base08: #b4637a;
+    --color-dawn-base09: #ea9d34;
+    --color-dawn-base0A: #d7827e;
+    --color-dawn-base0B: #286983;
+    --color-dawn-base0C: #56949f;
+    --color-dawn-base0D: #907aa9;
+    --color-dawn-base0E: #ea9d34;
+    --color-dawn-base0F: #cecacd;
+
+    --color-moon-base00: #191724;
+    --color-moon-base01: #1f1d2e;
+    --color-moon-base02: #26233a;
+    --color-moon-base03: #6e6a86;
+    --color-moon-base04: #908caa;
+    --color-moon-base05: #e0def4;
+    --color-moon-base06: #e0def4;
+    --color-moon-base07: #524f67;
+    --color-moon-base08: #eb6f92;
+    --color-moon-base09: #f6c177;
+    --color-moon-base0A: #ebbcba;
+    --color-moon-base0B: #31748f;
+    --color-moon-base0C: #9ccfd8;
+    --color-moon-base0D: #c4a7e7;
+    --color-moon-base0E: #f6c177;
+    --color-moon-base0F: #524f67;
+    --font-sans: 'Noto Sans Variable', sans-serif;
+}
+
+body {
+    @apply bg-dawn-base00 text-dawn-base05;
+    @apply dark:bg-moon-base00 dark:text-moon-base05;
+    @apply font-sans;
+    transition: all 1s ease;
+}
+
+main {
+    @apply dark:bg-moon-base01 bg-dawn-base01;
+    transition: all 1s ease;
+}
+
+nav {
+    @apply border-b-2 border-dawn-base0F dark:border-moon-base0F;
+}
+
+.link-category__name {
+    @apply text-2xl border-b py-2 font-medium;
+    @apply border-dawn-base0B dark:border-moon-base0B;
+}
+
+a {
+    @apply text-dawn-base0D dark:text-moon-base0D;
+    @apply hover:text-dawn-base0B dark:hover:text-moon-base0B;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+a > i, button > i {
+    @apply text-dawn-base05 dark:text-moon-base05;
+    @apply group-hover:text-dawn-base0B dark:group-hover:text-moon-base0B shadow-md transition-all duration-300;
+}

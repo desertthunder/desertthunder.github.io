@@ -11,6 +11,10 @@ serve:
 css:
     npx @tailwindcss/cli -i ./lib/styles.css -o ./lib/styles.min.css --watch --minify
 
+# Run vite
+bundle:
+    cd lib && pnpm dlx vite
+
 # Run caddy server and tailwind watcher
 dev:
-    just serve & just css
+    just bundle & just css

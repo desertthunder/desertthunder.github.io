@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Page</title>
-    <link rel="stylesheet" href="./styles.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./js/index.js"></script>
 </head>
-<body class="text-amber-50">
-    lol
-    Hello World
+<body class="flex flex-col min-h-screen wrapper">
+    <main class="container p-4 sm:mt-4 md:mt-16 gap-8 flex-1 flex flex-col mx-auto">
+        <nav class="flex items-center justify-between text-xl p-4">
+            <h1>Desert Thunder's Start Page</h1>
+            <div class="flex items-center gap-2" x-data="meta">
+                <a href="https://github.com/desertthunder/desertthunder.github.io" target="_blank" rel="noopener" class="group">
+                    <i class="i-simple-icons-github"></i>
+                </a>
+                <i class="i-ri-settings-3-fill"></i>
+                <button @click="toggle" :title="dark ? 'Toggle Light Mode' : 'Toggle Dark Mode'">
+                    <i x-show="dark" class="i-ri-sun-fill"></i>
+                    <i x-show="!dark" class="i-ri-moon-fill"></i>
+                </button>
+            </div>
+        </nav>
+        <header class="flex flex-col justify-center items-center" aria-roledescription="A welcome message and explanation of the page." x-data="meta">
+            <section :title="browser.name">
+                <div x-html="browser.icon" class="text-7xl"></div>
+            </section>
+            <section class="flex flex-col justify-center items-center mt-4 gap-2" aria-roledescription="local time & weather" x-data="locals">
+                <h1 class="text-4xl" x-text="time"></h1>
+                <div x-show="loading.weather">
+                    <i class="i-ri-loader-2-line animate-spin"></i>
+                </div>
+                <h2 x-text="weather"></h2>
+            </section>
+        </header>
+        <section class="flex-1 flex justify-center" aria-roledescription="links" x-data="links">
+            <div class="flex-1 grid grid-col-1 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
+                <template x-for="category in Object.keys(byCategory)" :key="category">
+                    <section class="flex flex-col gap-2">
+                        <h2 class="link-category__name" x-text="category"></h2>
+                        <ul class="flex flex-col gap-2">
+                            <template x-for="bookmark in byCategory[category]" :key="bookmark.name">
+                                <li>
+                                    <a :href="bookmark.url" target="_blank" rel="noopener" x-text="bookmark.name"></a>
+                                </li>
+                            </template>
+                        </ul>
+                    </section>
+                </template>
+            </div>
+        </section>
+    </main>
+    <footer class="flex items-center justify-center p-4">
+        <p class="inline-flex items-center">Made with <i class="i-mdi-lightning-bolt"></i> by Desert Thunder</p>
+    </footer>
 </body>
 </html>
