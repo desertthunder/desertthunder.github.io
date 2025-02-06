@@ -51,15 +51,10 @@ main {
 }
 
 nav {
-    @apply border-b-2 border-dawn-base0F dark:border-moon-base0F;
+    @apply border-b-4 border-dawn-base0F dark:border-moon-base0F text-2xl;
 }
 
-.link-category__name {
-    @apply text-2xl border-b py-2 font-medium;
-    @apply border-dawn-base0B dark:border-moon-base0B;
-}
-
-a {
+a, button {
     @apply text-dawn-base0D dark:text-moon-base0D;
     @apply hover:text-dawn-base0B dark:hover:text-moon-base0B;
 }
