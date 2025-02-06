@@ -21,7 +21,7 @@
 		"vite": "^6.1.0"
 	},
 	"dependencies": {
-		"@fontsource-variable/noto-sans": "^5.1.1",
+		"@fontsource-variable/hanken-grotesk": "^5.1.1",
 		"@tailwindcss/vite": "^4.0.3",
 		"alpinejs": "^3.14.8"
 	}

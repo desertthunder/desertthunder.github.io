@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@fontsource-variable/noto-sans':
+      '@fontsource-variable/hanken-grotesk':
         specifier: ^5.1.1
         version: 5.1.1
       '@tailwindcss/vite':
@@ -212,8 +212,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/noto-sans@5.1.1':
-    resolution: {integrity: sha512-hO0ywqmXLSU2C++B/FQeklo/zBSQZhHJef6ik/lJNaPmagpdHkHgQb1zwMuC9pdTv7UZeuGp38ML19w2AzM0kw==}
+  '@fontsource-variable/hanken-grotesk@5.1.1':
+    resolution: {integrity: sha512-T+9xYnsrs0Efy16lp0FKvviQeAMBS92iTga8pqvM677hsRYYvEkpoWxoasd5G7vD3/U4MvnFDNolYUu3JUlGsQ==}
 
   '@iconify-json/devicon@1.2.13':
     resolution: {integrity: sha512-EPwXcB25EF8iMyYUnu1NM/HBz7x9VpfTPH0gyWPU9Co+fjVpTz1M93ePdOPvQ+XSgNSTi7tkLlQio0BEe2pFag==}
@@ -728,7 +728,7 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@fontsource-variable/noto-sans@5.1.1': {}
+  '@fontsource-variable/hanken-grotesk@5.1.1': {}
 
   '@iconify-json/devicon@1.2.13':
     dependencies:
