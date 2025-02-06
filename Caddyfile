@@ -1,8 +1,0 @@
-{
-	debug
-}
-
-localhost:2015 {
-	root * ./lib/
-	file_server
-}
