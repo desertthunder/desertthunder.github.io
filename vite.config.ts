@@ -10,4 +10,7 @@ export default defineConfig({
 		emptyOutDir: true,
 	},
 	plugins: [tailwindcss()],
+	test: {
+		environment: "jsdom",
+	},
 });

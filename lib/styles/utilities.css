@@ -1,0 +1,13 @@
+.is-hidden {
+    display: none;
+}
+
+.spinner-icon {
+    animation: spin 900ms linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
