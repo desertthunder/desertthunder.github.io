@@ -1,22 +1,22 @@
 :root {
-    --font-sans: 'Hanken Grotesk Variable', sans-serif;
+    --font-sans: 'Google Sans Variable', sans-serif;
 
-    --theme-base00: #191724;
-    --theme-base01: #1f1d2e;
-    --theme-base02: #26233a;
-    --theme-base03: #6e6a86;
-    --theme-base04: #908caa;
-    --theme-base05: #e0def4;
-    --theme-base06: #e0def4;
-    --theme-base07: #524f67;
-    --theme-base08: #eb6f92;
-    --theme-base09: #f6c177;
-    --theme-base0A: #ebbcba;
-    --theme-base0B: #31748f;
-    --theme-base0C: #9ccfd8;
-    --theme-base0D: #c4a7e7;
-    --theme-base0E: #f6c177;
-    --theme-base0F: #524f67;
+    --theme-base00: #f9f5d7;
+    --theme-base01: #ebdbb2;
+    --theme-base02: #d5c4a1;
+    --theme-base03: #bdae93;
+    --theme-base04: #665c54;
+    --theme-base05: #504945;
+    --theme-base06: #3c3836;
+    --theme-base07: #282828;
+    --theme-base08: #9d0006;
+    --theme-base09: #af3a03;
+    --theme-base0A: #b57614;
+    --theme-base0B: #79740e;
+    --theme-base0C: #427b58;
+    --theme-base0D: #076678;
+    --theme-base0E: #8f3f71;
+    --theme-base0F: #d65d0e;
 
     --color-page: var(--theme-base00);
     --color-surface: color-mix(in srgb, var(--theme-base01) 92%, var(--theme-base00));

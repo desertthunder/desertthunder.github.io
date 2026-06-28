@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@fontsource-variable/hanken-grotesk':
+      '@fontsource-variable/google-sans':
         specifier: ^5.1.1
-        version: 5.1.1
+        version: 5.2.1
       '@tailwindcss/vite':
         specifier: ^4.3.1
         version: 4.3.1(vite@8.1.0(@types/node@22.13.1)(jiti@2.7.0))
@@ -135,8 +135,8 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fontsource-variable/hanken-grotesk@5.1.1':
-    resolution: {integrity: sha512-T+9xYnsrs0Efy16lp0FKvviQeAMBS92iTga8pqvM677hsRYYvEkpoWxoasd5G7vD3/U4MvnFDNolYUu3JUlGsQ==}
+  '@fontsource-variable/google-sans@5.2.1':
+    resolution: {integrity: sha512-dMyMlJVRJgQvvYlJLcrg2oiVzlKAuIMrbDxIMchEiMBGmpOA6VnVblj3cPfJyA0/fNPQS6krZaiJyJjHJZmkzw==}
 
   '@iconify-json/devicon@1.2.13':
     resolution: {integrity: sha512-EPwXcB25EF8iMyYUnu1NM/HBz7x9VpfTPH0gyWPU9Co+fjVpTz1M93ePdOPvQ+XSgNSTi7tkLlQio0BEe2pFag==}
@@ -940,7 +940,7 @@ snapshots:
 
   '@exodus/bytes@1.15.1': {}
 
-  '@fontsource-variable/hanken-grotesk@5.1.1': {}
+  '@fontsource-variable/google-sans@5.2.1': {}
 
   '@iconify-json/devicon@1.2.13':
     dependencies:
