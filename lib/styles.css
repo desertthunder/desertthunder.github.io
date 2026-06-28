@@ -1,7 +1,0 @@
-@import "tailwindcss/utilities.css" layer(icons);
-@import "./styles/reset.css";
-@import "./styles/tokens.css";
-@import "./styles/base.css";
-@import "./styles/utilities.css";
-@import "./styles/components.css";
-@config "../tailwind.config.js";
