@@ -1,29 +1,31 @@
 {
-    "name": "start-desertthunder",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "test": "vitest run"
-    },
-    "devDependencies": {
-        "@egoist/tailwindcss-icons": "^1.9.0",
-        "@iconify-json/devicon": "^1.2.13",
-        "@iconify-json/file-icons": "^1.2.1",
-        "@iconify-json/mdi": "^1.2.3",
-        "@iconify-json/ri": "^1.2.5",
-        "@iconify-json/simple-icons": "^1.2.23",
-        "@types/node": "^22.13.1",
-        "jsdom": "^29.1.1",
-        "tailwindcss": "^4.3.1",
-        "vite": "^8.1.0",
-        "vitest": "^4.1.9"
-    },
-    "dependencies": {
-        "@fontsource-variable/google-sans": "^5.1.1",
-        "@tailwindcss/vite": "^4.3.1"
-    }
+	"name": "start-desertthunder",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "vitest run",
+		"format": "prettier --write lib"
+	},
+	"devDependencies": {
+		"@egoist/tailwindcss-icons": "^1.9.0",
+		"@iconify-json/devicon": "^1.2.13",
+		"@iconify-json/file-icons": "^1.2.1",
+		"@iconify-json/mdi": "^1.2.3",
+		"@iconify-json/ri": "^1.2.5",
+		"@iconify-json/simple-icons": "^1.2.23",
+		"@types/node": "^22.13.1",
+		"jsdom": "^29.1.1",
+		"prettier": "^3.8.5",
+		"tailwindcss": "^4.3.1",
+		"vite": "^8.1.0",
+		"vitest": "^4.1.9"
+	},
+	"dependencies": {
+		"@fontsource-variable/google-sans": "^5.1.1",
+		"@tailwindcss/vite": "^4.3.1"
+	}
 }

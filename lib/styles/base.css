@@ -1,65 +1,65 @@
 body {
-    background: var(--color-page);
-    color: var(--color-text);
-    font-family: var(--font-sans);
-    line-height: var(--line-base);
-    transition:
-        background-color var(--duration-theme) ease,
-        color var(--duration-theme) ease;
+	background: var(--color-page);
+	color: var(--color-text);
+	font-family: var(--font-sans);
+	line-height: var(--line-base);
+	transition:
+		background-color var(--duration-theme) ease,
+		color var(--duration-theme) ease;
 }
 
 body.settings-open {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 a,
 button {
-    color: var(--color-link);
-    transition:
-        color var(--duration-fast) ease,
-        background-color var(--duration-fast) ease,
-        border-color var(--duration-fast) ease;
+	color: var(--color-link);
+	transition:
+		color var(--duration-fast) ease,
+		background-color var(--duration-fast) ease,
+		border-color var(--duration-fast) ease;
 }
 
 a:hover,
 button:hover {
-    color: var(--color-link-hover);
+	color: var(--color-link-hover);
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 a > i,
 button > i {
-    color: var(--color-text);
-    filter: drop-shadow(var(--shadow-icon));
-    transition: color var(--duration-fast) ease;
+	color: var(--color-text);
+	filter: drop-shadow(var(--shadow-icon));
+	transition: color var(--duration-fast) ease;
 }
 
 a:hover > i,
 button:hover > i {
-    color: var(--color-link-hover);
+	color: var(--color-link-hover);
 }
 
 input,
 select {
-    min-width: 0;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    background: var(--color-page);
-    color: var(--color-text);
-    padding: 0.55rem 0.7rem;
+	min-width: 0;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: var(--color-page);
+	color: var(--color-text);
+	padding: 0.55rem 0.7rem;
 }
 
 input:focus {
-    border-color: var(--color-link-hover);
-    outline: 2px solid var(--color-focus);
-    outline-offset: 2px;
+	border-color: var(--color-link-hover);
+	outline: 2px solid var(--color-focus);
+	outline-offset: 2px;
 }
 
 select:focus {
-    border-color: var(--color-link-hover);
-    outline: 2px solid var(--color-focus);
-    outline-offset: 2px;
+	border-color: var(--color-link-hover);
+	outline: 2px solid var(--color-focus);
+	outline-offset: 2px;
 }
